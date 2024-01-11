@@ -6,8 +6,7 @@ export const config = {
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || "m0gulkyq",
   apiVersion: "2021-10-21",
   useCdn: process.env.NODE_ENV === "production",
-  studioUrl: "/studio", // Or: 'https://my-cool-project.sanity.studio'
-  encodeSourceMap: true, // Optional. Default to: process.env.NEXT_PUBLIC_VERCEL_ENV === 'preview',
+  basePath: "/studio",
 };
 
 export const sanityClient = createClient(config);
